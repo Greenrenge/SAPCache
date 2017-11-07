@@ -33,8 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,11 +59,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Appconfig.cs" />
+    <Compile Include="IntramartDbContext.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\CacheTable.cs" />
+    <Compile Include="Models\COAS.cs" />
+    <Compile Include="Models\KNA1.cs" />
+    <Compile Include="Models\KNVV.cs" />
+    <Compile Include="Models\LFA1.cs" />
+    <Compile Include="Models\MAKT.cs" />
+    <Compile Include="Models\MARA.cs" />
+    <Compile Include="Models\T171T.cs" />
+    <Compile Include="Models\TVBVK.cs" />
+    <Compile Include="Models\TVGRT.cs" />
+    <Compile Include="Models\TVKBT.cs" />
+    <Compile Include="Models\TVKBZ.cs" />
+    <Compile Include="Models\TVKOT.cs" />
+    <Compile Include="Models\TVKOV.cs" />
+    <Compile Include="Models\TVTWT.cs" />
+    <Compile Include="Models\TVV1T.cs" />
+    <Compile Include="Models\TVV2T.cs" />
+    <Compile Include="Models\TVV3T.cs" />
+    <Compile Include="Models\V_AUART.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MaleeUtilities\MaleeUtilities\MaleeUtilities.csproj">
+      <Project>{2dd0f03b-2edd-46dc-8527-670ae87de8d8}</Project>
+      <Name>MaleeUtilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
