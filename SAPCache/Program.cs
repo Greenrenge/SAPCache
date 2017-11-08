@@ -80,9 +80,9 @@ namespace SAPCache
 
             #endregion
 
-
-            log.Debug("Sync Begins");
-
+            log.Debug("-----------------------------------------------------------------------------------------");
+            log.Debug("Sync Begin");
+            log.Debug("-----------------------------------------------------------------------------------------");
             #region startSync
             foreach (var tablename in Appconfig.TableToSync)
             {
@@ -106,7 +106,10 @@ namespace SAPCache
                 }
             }
             #endregion
-
+            log.Debug("-----------------------------------------------------------------------------------------");
+            log.Debug("Sync End");
+            log.Debug("-----------------------------------------------------------------------------------------");
+            log.Debug(Environment.NewLine);
         }
     }
 }
