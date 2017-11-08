@@ -95,10 +95,12 @@ namespace SAPCache
                     var syncComplete = instance.SyncStart();
                     if(syncComplete)
                     {
+                        Console.WriteLine("Table [" + instance._tableName + "] has been synced.");
                         log.Debug("Table ["+ instance._tableName+ "] has been synced.");
                     }
                     else
                     {
+                        Console.WriteLine("Table [" + instance._tableName + "] ERROR occured.");
                         log.Error("Table [" + instance._tableName + "] ERROR occured.");
                     }
                 }

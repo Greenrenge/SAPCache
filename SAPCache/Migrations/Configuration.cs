@@ -10,6 +10,7 @@ namespace SAPCache.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(SAPCache.IntramartDbContext context)
