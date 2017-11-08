@@ -5,7 +5,7 @@ namespace SAPCache.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<SAPCache.IntramartDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<SAPCache.SAPDbContext>
     {
         public Configuration()
         {
@@ -13,7 +13,7 @@ namespace SAPCache.Migrations
             AutomaticMigrationDataLossAllowed = true;
         }
 
-        protected override void Seed(SAPCache.IntramartDbContext context)
+        protected override void Seed(SAPCache.SAPDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

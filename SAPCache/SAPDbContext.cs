@@ -5,7 +5,7 @@ namespace SAPCache
     using System.Data.Entity;
     using System.Linq;
 
-    public class IntramartDbContext : DbContext
+    public class SAPDbContext : DbContext
     {
         // Your context has been configured to use a 'Intramart' connection string from your application's 
         // configuration file (App.config or Web.config). By default, this connection string targets the 
@@ -13,10 +13,10 @@ namespace SAPCache
         // 
         // If you wish to target a different database and/or database provider, modify the 'Intramart' 
         // connection string in the application configuration file.
-        public IntramartDbContext()
-            : base("name=Intramart")
+        public SAPDbContext()
+            : base("name=SAP")
         {
-            System.Data.Entity.Database.SetInitializer(new MigrateDatabaseToLatestVersion<IntramartDbContext, SAPCache.Migrations.Configuration>());
+            System.Data.Entity.Database.SetInitializer(new MigrateDatabaseToLatestVersion<SAPDbContext, SAPCache.Migrations.Configuration>());
         }
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 

@@ -35,7 +35,7 @@ namespace SAPCache.Models
             {
                 var obj = SAPBaseService.GetSAPData(_tableName, _objectFieldSet, _options);
 
-                using (var db = new IntramartDbContext())
+                using (var db = new SAPDbContext())
                 {
                     if (obj.Count > 0)
                     {

@@ -88,7 +88,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Appconfig.cs" />
-    <Compile Include="IntramartDbContext.cs" />
+    <Compile Include="SAPDbContext.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CacheTable.cs" />
     <Compile Include="Models\COAS.cs" />
