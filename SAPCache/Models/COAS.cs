@@ -19,6 +19,7 @@ namespace SAPCache.Models
         public string REFNR { get; set; }//Reference Order
         public string KTEXT { get; set; }//Description
         public string BUKRS { get; set; }//Company Code
+        public string KOSTV { get; set; }//CostCenter
         //public string WERKS { get; set; }//Plant
         public string WAERS { get; set; }//currency
         public string OBJNR { get; set; }//Object Number
@@ -34,6 +35,7 @@ namespace SAPCache.Models
             {"REFNR",x=>x.REFNR},
             {"KTEXT",x=>x.KTEXT},
             {"BUKRS",x=>x.BUKRS},
+            {"KOSTV",x=>x.KOSTV},
             //{"WERKS",x=>x.WERKS},
             {"WAERS",x=>x.WAERS},
             {"OBJNR",x=>x.OBJNR},
