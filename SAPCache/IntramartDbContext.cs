@@ -41,6 +41,16 @@ namespace SAPCache
         public virtual DbSet<TVKOT> TVKOT { get; set; }
         public virtual DbSet<MARA> MARA { get; set; }
         public virtual DbSet<MAKT> MAKT { get; set; }
+        public virtual DbSet<SKA1> SKA1 { get; set; }
+        public virtual DbSet<SKAT> SKAT { get; set; }
+        public virtual DbSet<MVKE> MVKE { get; set; }
+        public virtual DbSet<T179> T179 { get; set; }
+        public virtual DbSet<T179T> T179T { get; set; }
+        public virtual DbSet<TVM1T> TVM1T { get; set; }
+        public virtual DbSet<TVM2T> TVM2T { get; set; }
+        public virtual DbSet<TVM3T> TVM3T { get; set; }
+        public virtual DbSet<TVM4T> TVM4T { get; set; }
+
     }
 
     //public class MyEntity

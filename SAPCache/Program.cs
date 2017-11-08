@@ -68,7 +68,16 @@ namespace SAPCache
             tableDict.Add("TVKOT", typeof(TVKOTManager));
             tableDict.Add("MARA", typeof(MARAManager));
             tableDict.Add("MAKT", typeof(MAKTManager));
-            
+            tableDict.Add("SKA1", typeof(SKA1Manager));
+            tableDict.Add("SKAT", typeof(SKATManager));
+            tableDict.Add("MVKE", typeof(MVKEManager));
+            tableDict.Add("T179", typeof(T179Manager));
+            tableDict.Add("T179T", typeof(T179TManager));
+            tableDict.Add("TVM1T", typeof(TVM1TManager));
+            tableDict.Add("TVM2T", typeof(TVM2TManager));
+            tableDict.Add("TVM3T", typeof(TVM3TManager));
+            tableDict.Add("TVM4T", typeof(TVM4TManager));
+
             #endregion
 
 
