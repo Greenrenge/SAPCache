@@ -88,6 +88,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Appconfig.cs" />
+    <Compile Include="Models\CEPCT.cs" />
+    <Compile Include="Models\T001K.cs" />
+    <Compile Include="Models\T001L.cs" />
+    <Compile Include="Models\T006A.cs" />
+    <Compile Include="Models\T023T.cs" />
+    <Compile Include="Models\T024.cs" />
+    <Compile Include="Models\T024D.cs" />
+    <Compile Include="Models\T025.cs" />
+    <Compile Include="Models\T025T.cs" />
+    <Compile Include="Models\T134T.cs" />
+    <Compile Include="Models\T190ST.cs" />
+    <Compile Include="Models\T438T.cs" />
+    <Compile Include="Models\T438X.cs" />
+    <Compile Include="Models\T439T.cs" />
+    <Compile Include="Models\TCK14.cs" />
+    <Compile Include="Models\TCK15.cs" />
+    <Compile Include="Models\TLGRT.cs" />
+    <Compile Include="Models\TMVFT.cs" />
+    <Compile Include="Models\TQ05T.cs" />
+    <Compile Include="Models\TQ08T.cs" />
+    <Compile Include="Models\TQ30T.cs" />
+    <Compile Include="Models\TSPAT.cs" />
+    <Compile Include="Models\TTGRT.cs" />
+    <Compile Include="Models\TVKMT.cs" />
+    <Compile Include="Models\TVSMT.cs" />
+    <Compile Include="Models\TWSPR.cs" />
     <Compile Include="SAPDbContext.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CacheTable.cs" />

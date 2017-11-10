@@ -14,7 +14,6 @@ namespace SAPCache.Models
     {
         [Key]
         public string PRODH { get; set; }//Product Hierarchy
-      
         public string STUFE { get; set; }//Level Number
        
 

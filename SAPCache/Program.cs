@@ -77,7 +77,32 @@ namespace SAPCache
             tableDict.Add("TVM2T", typeof(TVM2TManager));
             tableDict.Add("TVM3T", typeof(TVM3TManager));
             tableDict.Add("TVM4T", typeof(TVM4TManager));
-
+            tableDict.Add("T134T", typeof(T134TManager));
+            tableDict.Add("T006A", typeof(T006AManager));
+            tableDict.Add("T001K", typeof(T001KManager));
+            tableDict.Add("T190ST", typeof(T190STManager));
+            tableDict.Add("TWSPR", typeof(TWSPRManager));
+            tableDict.Add("T023T", typeof(T023TManager));
+            tableDict.Add("TSPAT", typeof(TSPATManager));
+            tableDict.Add("TVSMT", typeof(TVSMTManager));
+            tableDict.Add("TVKMT", typeof(TVKMTManager));
+            tableDict.Add("TMVFT", typeof(TMVFTManager));
+            tableDict.Add("TTGRT", typeof(TTGRTManager));
+            tableDict.Add("TLGRT", typeof(TLGRTManager));
+            tableDict.Add("T024", typeof(T024Manager));
+            tableDict.Add("T438X", typeof(T438XManager));
+            tableDict.Add("T438T", typeof(T438TManager));
+            tableDict.Add("T439T", typeof(T439TManager));
+            tableDict.Add("T024D", typeof(T024DManager));
+            tableDict.Add("T001L", typeof(T001LManager));
+            tableDict.Add("TQ30T", typeof(TQ30TManager));
+            tableDict.Add("TQ08T", typeof(TQ08TManager));
+            tableDict.Add("TQ05T", typeof(TQ05TManager));
+            tableDict.Add("T025", typeof(T025Manager));
+            tableDict.Add("T025T", typeof(T025TManager));
+            tableDict.Add("TCK14", typeof(TCK14Manager));
+            tableDict.Add("TCK15", typeof(TCK15Manager));
+            tableDict.Add("CEPCT", typeof(CEPCTManager));
             #endregion
 
             log.Debug("-----------------------------------------------------------------------------------------");

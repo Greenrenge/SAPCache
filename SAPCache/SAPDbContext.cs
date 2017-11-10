@@ -50,6 +50,32 @@ namespace SAPCache
         public virtual DbSet<TVM2T> TVM2T { get; set; }
         public virtual DbSet<TVM3T> TVM3T { get; set; }
         public virtual DbSet<TVM4T> TVM4T { get; set; }
+        public virtual DbSet<T134T> T134T { get; set; }
+        public virtual DbSet<T006A> T006A { get; set; }
+        public virtual DbSet<T001K> T001K { get; set; }
+        public virtual DbSet<T190ST> T190ST { get; set; }
+        public virtual DbSet<TWSPR> TWSPR { get; set; }
+        public virtual DbSet<T023T> T023T { get; set; }
+        public virtual DbSet<TSPAT> TSPAT { get; set; }
+        public virtual DbSet<TVSMT> TVSMT { get; set; }
+        public virtual DbSet<TVKMT> TVKMT { get; set; }
+        public virtual DbSet<TMVFT> TMVFT { get; set; }
+        public virtual DbSet<TTGRT> TTGRT { get; set; }
+        public virtual DbSet<TLGRT> TLGRT { get; set; }
+        public virtual DbSet<T024> T024 { get; set; }
+        public virtual DbSet<T438X> T438X { get; set; }
+        public virtual DbSet<T438T> T438T { get; set; }
+        public virtual DbSet<T439T> T439T { get; set; }
+        public virtual DbSet<T024D> T024D { get; set; }
+        public virtual DbSet<T001L> T001L { get; set; }
+        public virtual DbSet<TQ30T> TQ30T { get; set; }
+        public virtual DbSet<TQ08T> TQ08T { get; set; }
+        public virtual DbSet<TQ05T> TQ05T { get; set; }
+        public virtual DbSet<T025> T025 { get; set; }
+        public virtual DbSet<T025T> T025T { get; set; }
+        public virtual DbSet<TCK14> TCK14 { get; set; }
+        public virtual DbSet<TCK15> TCK15 { get; set; }
+        public virtual DbSet<CEPCT> CEPCT { get; set; }
 
     }
 

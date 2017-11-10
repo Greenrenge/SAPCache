@@ -21,8 +21,8 @@ namespace SAPCache.Models
 
     public class SyncManager<T> : CacheTable where T : class, new()
     {
-        private IDictionary<string, Expression<Func<T, object>>> _objectFieldSet;
-        private List<string> _options;
+        protected IDictionary<string, Expression<Func<T, object>>> _objectFieldSet;
+        protected List<string> _options;
         public SyncManager(List<string> options, string tablename, IDictionary<string, Expression<Func<T, object>>> objectFieldSet) : base(tablename)
         {
             _objectFieldSet = objectFieldSet;
