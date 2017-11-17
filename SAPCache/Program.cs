@@ -103,6 +103,7 @@ namespace SAPCache
             tableDict.Add("TCK14", typeof(TCK14Manager));
             tableDict.Add("TCK15", typeof(TCK15Manager));
             tableDict.Add("CEPCT", typeof(CEPCTManager));
+            tableDict.Add("MBEW", typeof(MBEWManager));
             #endregion
 
             log.Debug("-----------------------------------------------------------------------------------------");

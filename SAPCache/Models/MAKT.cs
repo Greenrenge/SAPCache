@@ -13,7 +13,7 @@ namespace SAPCache.Models
     public class MAKT
     {
         [Key]
-        public string MATNR { get; set; }//SaleOrg
+        public string MATNR { get; set; }//Material
         public string MAKTX { get; set; }//Desc1
         public string MAKTG { get; set; }//Desc2
 

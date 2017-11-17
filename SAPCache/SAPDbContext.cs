@@ -76,7 +76,7 @@ namespace SAPCache
         public virtual DbSet<TCK14> TCK14 { get; set; }
         public virtual DbSet<TCK15> TCK15 { get; set; }
         public virtual DbSet<CEPCT> CEPCT { get; set; }
-
+        public virtual DbSet<MBEW> MBEW { get; set; }
     }
 
     //public class MyEntity

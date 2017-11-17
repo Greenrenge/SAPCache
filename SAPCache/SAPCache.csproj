@@ -89,6 +89,7 @@
   <ItemGroup>
     <Compile Include="Appconfig.cs" />
     <Compile Include="Models\CEPCT.cs" />
+    <Compile Include="Models\MBEW.cs" />
     <Compile Include="Models\T001K.cs" />
     <Compile Include="Models\T001L.cs" />
     <Compile Include="Models\T006A.cs" />
