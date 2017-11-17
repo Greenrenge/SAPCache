@@ -19,6 +19,9 @@ namespace SAPCache.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
+
+
+            //this is a view for easily select customer detail
             context.Database.ExecuteSqlCommand(@"
                                       										
                                         IF OBJECT_ID('dbo.VIEW_KNVV_TEXT') IS NULL
@@ -106,6 +109,24 @@ namespace SAPCache.Migrations
                                        
                                         END
 ");
+
+
+
+            //this is for cutting zero out of the the begining of the string 
+            context.Database.ExecuteSqlCommand(@"
+                IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE type = 'FN' AND name = 'unwrapzero')
+                BEGIN
+                    DECLARE @sql NVARCHAR(MAX);
+                    SET @sql = N'
+                    create function unwrapzero(@sapcode as varchar(500))
+                	returns varchar(500)
+                	begin
+                		return substring(@sapcode ,patindex(''%[^0]%'',@sapcode ),LEN(@sapcode ))
+                	end;
+                    ';
+                    EXEC sp_executesql @sql;
+                END
+                ");
         }
     }
 }
