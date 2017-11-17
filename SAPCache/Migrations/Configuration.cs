@@ -127,6 +127,8 @@ namespace SAPCache.Migrations
                     EXEC sp_executesql @sql;
                 END
                 ");
+            //grant execute permission to maleereader
+            context.Database.ExecuteSqlCommand(@"GRANT execute on unwrapzero TO MaleeReader;");
         }
     }
 }
