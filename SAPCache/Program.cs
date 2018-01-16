@@ -114,6 +114,8 @@ namespace SAPCache
             tableDict.Add("T005T", typeof(T005TManager));
             tableDict.Add("T014T", typeof(T014TManager));
             tableDict.Add("ADRC", typeof(ADRCManager));
+            tableDict.Add("ADR2", typeof(ADR2Manager));
+            tableDict.Add("ADR6", typeof(ADR6Manager));
             #endregion
 
             log.Debug("-----------------------------------------------------------------------------------------");

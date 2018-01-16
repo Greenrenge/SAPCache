@@ -88,6 +88,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Appconfig.cs" />
+    <Compile Include="Models\ADR2.cs" />
+    <Compile Include="Models\ADR6.cs" />
     <Compile Include="Models\ADRC.cs" />
     <Compile Include="Models\CEPCT.cs" />
     <Compile Include="Models\MBEW.cs" />

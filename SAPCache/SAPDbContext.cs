@@ -86,6 +86,8 @@ namespace SAPCache
         public virtual DbSet<T005T> T005T { get; set; }
         public virtual DbSet<T014T> T014T { get; set; }
         public virtual DbSet<ADRC> ADRC { get; set; }
+        public virtual DbSet<ADR2> ADR2 { get; set; }
+        public virtual DbSet<ADR6> ADR6 { get; set; }
     }
 
     //public class MyEntity

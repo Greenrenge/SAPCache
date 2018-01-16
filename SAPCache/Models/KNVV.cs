@@ -48,6 +48,7 @@ namespace SAPCache.Models
         public string KVGR5 { get; set; }//CustomerGroup5
         public string KURST { get; set; }//ExchangeRateType
         public string KKBER { get; set; }//CreditControlArea
+        public string CASSD { get; set; }//SaleBlock
     }
     public class KNVVManager : SyncManager<KNVV>
     {
@@ -79,7 +80,8 @@ namespace SAPCache.Models
             {"KVGR4",x=>x.KVGR4},
             {"KVGR5",x=>x.KVGR5},
             {"KURST",x=>x.KURST},
-            {"KKBER",x=>x.KKBER }
+            {"KKBER",x=>x.KKBER },
+            {"CASSD",x=>x.CASSD }
             })
         {
 
