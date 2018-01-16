@@ -77,6 +77,15 @@ namespace SAPCache
         public virtual DbSet<TCK15> TCK15 { get; set; }
         public virtual DbSet<CEPCT> CEPCT { get; set; }
         public virtual DbSet<MBEW> MBEW { get; set; }
+        public virtual DbSet<T077X> T077X { get; set; }
+        public virtual DbSet<T151T> T151T { get; set; }
+        public virtual DbSet<TZONT> TZONT { get; set; }
+        public virtual DbSet<T005U> T005U { get; set; }
+        public virtual DbSet<T052U> T052U { get; set; }
+        public virtual DbSet<PA0001> PA0001 { get; set; }
+        public virtual DbSet<T005T> T005T { get; set; }
+        public virtual DbSet<T014T> T014T { get; set; }
+        public virtual DbSet<ADRC> ADRC { get; set; }
     }
 
     //public class MyEntity

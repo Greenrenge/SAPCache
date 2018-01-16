@@ -23,6 +23,15 @@ namespace SAPCache.Models
         public string STCD1 { get; set; }//tax num1
         public string STCD2 { get; set; }//tax num2
         public string STCD3 { get; set; }//tax num3
+
+        public string AUFSD { get; set; }//Order Block
+        public string FAKSD { get; set; }//Billing Block
+        public string LIFSD { get; set; }//Delivery Block
+        public string CASSD { get; set; }//Sale Block
+        public string LZONE { get; set; }//transportZone
+        public string VBUND { get; set; }//Trading Partner
+        public string ADRNR { get; set; }//Address Number (FK)
+
     }
     public class KNA1Manger: SyncManager<KNA1>
     {
@@ -38,6 +47,13 @@ namespace SAPCache.Models
                 {"STCD1" ,x=>x.STCD1},
                 {"STCD2" ,x=>x.STCD2},
                 {"STCD3" ,x=>x.STCD3},
+                {"AUFSD" ,x=>x.AUFSD},
+                {"FAKSD" ,x=>x.FAKSD},
+                {"LIFSD" ,x=>x.LIFSD},
+                {"CASSD" ,x=>x.CASSD},
+                {"LZONE" ,x=>x.LZONE},
+                {"VBUND" ,x=>x.VBUND},
+                {"ADRNR" ,x=>x.ADRNR},
             })
         {
 

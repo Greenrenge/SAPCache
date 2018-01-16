@@ -10,6 +10,7 @@ using MaleeUtilities.SAP.Utils;
 using SAPCache.Models;
 using System.Linq.Expressions;
 using log4net;
+
 namespace SAPCache
 {
     class Program
@@ -104,6 +105,15 @@ namespace SAPCache
             tableDict.Add("TCK15", typeof(TCK15Manager));
             tableDict.Add("CEPCT", typeof(CEPCTManager));
             tableDict.Add("MBEW", typeof(MBEWManager));
+            tableDict.Add("T077X", typeof(T077XManager));
+            tableDict.Add("T151T", typeof(T151TManager));
+            tableDict.Add("TZONT", typeof(TZONTManager));
+            tableDict.Add("T005U", typeof(T005UManager));
+            tableDict.Add("T052U", typeof(T052UManager));
+            tableDict.Add("PA0001", typeof(PA0001Manager));
+            tableDict.Add("T005T", typeof(T005TManager));
+            tableDict.Add("T014T", typeof(T014TManager));
+            tableDict.Add("ADRC", typeof(ADRCManager));
             #endregion
 
             log.Debug("-----------------------------------------------------------------------------------------");
