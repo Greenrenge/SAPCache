@@ -161,7 +161,7 @@ left join dbo.ADR2 adr2 on kna1.ADRNR = adr2.[ADDRNUMBER] and LEN(adr2.PERSNUMBE
                                         END
                                         ELSE
                                         BEGIN
-                                            EXECUTE(''ALTER VIEW dbo.VIEW_KNVV_TEXT
+                                            EXECUTE(''ALTER VIEW dbo.VIEW_CUSTOMER_DETAIL_MASTER
                                             AS
                                                 select 	
 	dbo.unwrapzero(kna1.KUNNR) as customercode
