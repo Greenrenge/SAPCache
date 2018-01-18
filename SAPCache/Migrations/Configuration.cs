@@ -111,11 +111,12 @@ namespace SAPCache.Migrations
 ");
 
             context.Database.ExecuteSqlCommand(@"
-            IF OBJECT_ID('dbo.VIEW_KNVV_TEXT') IS NULL
-                                        BEGIN
-                                            EXECUTE('CREATE VIEW dbo.VIEW_CUSTOMER_DETAIL_MASTER
-                                            AS
-                                                select 	
+           
+ IF OBJECT_ID('dbo.VIEW_CUSTOMER_DETAIL_MASTER') IS NULL
+ BEGIN
+ EXECUTE('CREATE VIEW dbo.VIEW_CUSTOMER_DETAIL_MASTER
+          AS
+          select 	
 	dbo.unwrapzero(kna1.KUNNR) as customercode
 	,adrc.[NAME1] as name1
 	,adrc.[NAME2] as name2
@@ -152,7 +153,7 @@ namespace SAPCache.Migrations
 from dbo.KNA1 kna1	
 left join dbo.ADRC adrc on kna1.ADRNR = adrc.[ADDRNUMBER] and adrc.NATION <> ''I''
 left join dbo.ADR6 adr6 on kna1.ADRNR = adr6.[ADDRNUMBER] and LEN(adr6.PERSNUMBER)=0 and adr6.FLGDEFAULT = ''X''
-left join dbo.ADR2 adr2 on kna1.ADRNR = adr2.[ADDRNUMBER] and LEN(adr2.PERSNUMBER)=0 and adr2.FLGDEFAULT = ''X''
+left join dbo.ADR2 adr2 on kna1.ADRNR = adr2.[ADDRNUMBER] and LEN(adr2.PERSNUMBER)=0 and adr2.FLGDEFAULT = ''X''')
 
                                         
                                         
@@ -161,7 +162,7 @@ left join dbo.ADR2 adr2 on kna1.ADRNR = adr2.[ADDRNUMBER] and LEN(adr2.PERSNUMBE
                                         END
                                         ELSE
                                         BEGIN
-                                            EXECUTE(''ALTER VIEW dbo.VIEW_CUSTOMER_DETAIL_MASTER
+                                            EXECUTE('ALTER VIEW dbo.VIEW_CUSTOMER_DETAIL_MASTER
                                             AS
                                                 select 	
 	dbo.unwrapzero(kna1.KUNNR) as customercode
@@ -200,13 +201,8 @@ left join dbo.ADR2 adr2 on kna1.ADRNR = adr2.[ADDRNUMBER] and LEN(adr2.PERSNUMBE
 from dbo.KNA1 kna1	
 left join dbo.ADRC adrc on kna1.ADRNR = adrc.[ADDRNUMBER] and adrc.NATION <> ''I''
 left join dbo.ADR6 adr6 on kna1.ADRNR = adr6.[ADDRNUMBER] and LEN(adr6.PERSNUMBER)=0 and adr6.FLGDEFAULT = ''X''
-left join dbo.ADR2 adr2 on kna1.ADRNR = adr2.[ADDRNUMBER] and LEN(adr2.PERSNUMBER)=0 and adr2.FLGDEFAULT = ''X''
-')
-                                        
-                                        
-                                        
-                                       
-                                        END");
+left join dbo.ADR2 adr2 on kna1.ADRNR = adr2.[ADDRNUMBER] and LEN(adr2.PERSNUMBER)=0 and adr2.FLGDEFAULT = ''X''')
+END");
 
             //this is for cutting zero out of the the begining of the string 
             context.Database.ExecuteSqlCommand(@"
