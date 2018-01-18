@@ -112,12 +112,13 @@ namespace SAPCache.Migrations
 
             context.Database.ExecuteSqlCommand(@"
            
+
  IF OBJECT_ID('dbo.VIEW_CUSTOMER_DETAIL_MASTER') IS NULL
  BEGIN
  EXECUTE('CREATE VIEW dbo.VIEW_CUSTOMER_DETAIL_MASTER
           AS
           select 	
-	dbo.unwrapzero(kna1.KUNNR) as customercode
+	kna1.KUNNR as customercode
 	,adrc.[NAME1] as name1
 	,adrc.[NAME2] as name2
 	,adrc.[NAME4] as branch_name
@@ -165,7 +166,7 @@ left join dbo.ADR2 adr2 on kna1.ADRNR = adr2.[ADDRNUMBER] and LEN(adr2.PERSNUMBE
                                             EXECUTE('ALTER VIEW dbo.VIEW_CUSTOMER_DETAIL_MASTER
                                             AS
                                                 select 	
-	dbo.unwrapzero(kna1.KUNNR) as customercode
+	kna1.KUNNR as customercode
 	,adrc.[NAME1] as name1
 	,adrc.[NAME2] as name2
 	,adrc.[NAME4] as branch_name
