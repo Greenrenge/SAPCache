@@ -92,6 +92,7 @@
     <Compile Include="Models\ADR6.cs" />
     <Compile Include="Models\ADRC.cs" />
     <Compile Include="Models\CEPCT.cs" />
+    <Compile Include="Models\KNVP.cs" />
     <Compile Include="Models\MBEW.cs" />
     <Compile Include="Models\PA0001.cs" />
     <Compile Include="Models\T001K.cs" />
