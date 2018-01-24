@@ -125,6 +125,7 @@
     <Compile Include="Models\TSPAT.cs" />
     <Compile Include="Models\TTGRT.cs" />
     <Compile Include="Models\TVKMT.cs" />
+    <Compile Include="Models\TVSBT.cs" />
     <Compile Include="Models\TVSMT.cs" />
     <Compile Include="Models\TWSPR.cs" />
     <Compile Include="Models\TZONT.cs" />

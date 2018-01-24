@@ -118,6 +118,7 @@ namespace SAPCache
             tableDict.Add("ADR6", typeof(ADR6Manager));
             tableDict.Add("KNVP", typeof(KNVPManager));
             tableDict.Add("KNKK", typeof(KNKKManager));
+            tableDict.Add("TVSBT", typeof(TVSBTManager));
             #endregion
 
             log.Debug("-----------------------------------------------------------------------------------------");
